@@ -29,7 +29,14 @@ $(document).ready( function() {
 			console.log(data.getAllResponseHeaders());
 		});
 		
-		
+		$.ajax({
+			type: 'GET',
+			url: 'http://control.poe.xyz.is/omoninesimorak',
+			async:false
+		}).always(function(data) {
+			console.log('456');
+			console.log(data.getAllResponseHeaders());
+		});
 		
 		
 	});
